@@ -1,0 +1,27 @@
+import React from "react";
+import ReactDOM from "react-dom";
+const date = new Date();
+var x=0;
+var greeting;
+var customStyle={
+  color:"red"
+}
+if(x==0)
+{
+  greeting="good morning";
+  customStyle.color="red";
+}
+else if(x==1)
+{
+  greeting="good afternoon";
+  customStyle.color="green";
+}
+else{
+  greeting="good evening";
+  customStyle.color="blue";
+}
+
+
+ReactDOM.render(
+<h1 className="heading" style={customStyle} >{greeting}</h1>, 
+document.getElementById("root"));
